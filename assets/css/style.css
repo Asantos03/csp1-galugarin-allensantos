@@ -1,0 +1,82 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+/*intro*/
+.landing{
+	height: 100%;
+	width: 100%;
+	background-image: url("../images/nature6.jpg");
+	background-size: cover;
+	margin:auto;
+	display: table;
+	background-size: cover;
+	top:0;
+	margin:auto;
+}
+/*inner*/
+.intro-landing{
+	display: table-cell;
+	vertical-align:middle;
+	width: 100%;
+	max-width: none;
+	position: relative;
+}
+.content{
+max-width: 500px;
+margin:0 auto;
+text-align: center;
+top:50%;
+left: 50%;
+position: absolute;
+transform:translate(-50%,300%); 
+}
+.btn{
+	color:#3A6168;
+	font-family: sans-serif;
+	font-size: 135%;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: none;
+	border:2px solid #3A6168;
+	padding: 10px 20px;
+	border-radius: 10px;	
+
+}
+.btn:hover{
+	color:#CBDFD6;
+	border: solid #CBDFD6; 
+}
+
+#img-ctrl{
+	height: 200px;
+	width: 100%;
+	opacity: .7;
+}
+i{
+	font-size: 45px;
+	color:black;
+}
+.os-animation{
+	animation: bounceInUp 2s;
+
+}
+
+#nav{
+	color: white;
+}
+a{
+	color: white;
+}
+#img-ctrl-carousel{
+	/*float:left;*/
+	height: 400px;
+	/*width: 100px;*/
+}
+
+#carousel-container{
+	/*height: 500px;*/
+	width: 100%;
+	border:2px solid white;
