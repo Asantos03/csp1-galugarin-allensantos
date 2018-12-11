@@ -71,7 +71,10 @@ html,body{
 	}
 	
 	
-	
+	.navbar{
+		background-color:#00334d;
+		opacity: .9;
+	}
 	
 	
 /*inner*/
@@ -199,7 +202,7 @@ a{
 footer{
 	width: 100%;
 	height: 100px;
-	background-color: green;
+	background-color: #00334d;
 	float: left;
 
 }
@@ -346,7 +349,7 @@ div#slider figure {
 	text-align: center;
 	height: 100px;
 	width: 100px;
-	background-color:#0066ff;
+	background-color:#00334d;
 	text-align: center;
 	position: relative;
 }
@@ -357,6 +360,7 @@ div#slider figure {
 	transform: translate(-50%,-50%);
 	position: absolute;
 }
+
 
 .fa-envelope-open{
 	color:white;
@@ -379,10 +383,26 @@ div#slider figure {
 }
 .container-form{
 	margin-top:4rem; 
-	background-image: url("../images/nature6.jpg");
+	background-image:linear-gradient(red,blue);
 	background-size: cover;
 
 }
+#hr-line{
+	margin-top:1rem;
+	height: 5px;
+	width: 100px;
+	background-color: white;
+}
+#hr-line2{
+	margin-top:1rem;
+	height: 5px;
+	width: 100px;
+	background-color: white;
+}
+#map{
+	margin-top:.4rem;
+}
+
 .btn{
 	font-size: 1rem;
 }
@@ -532,9 +552,7 @@ table, th, td {
 	background-repeat: no-repeat;
 	
 }
-.navbar{
-	opacity: .8;
-}
+	
 .container-t-tips{
 	background-color: rgba(0, 102, 0,.4);
 /*	margin-top: 8rem;*/
