@@ -26,7 +26,6 @@ html,body{
 	height: 100%;
 	width: 100%;
 	background-image: url("../images/nature6.jpg");
-	
 	background-size: cover;
 	/*background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0));*/
 	display: table;
@@ -83,13 +82,13 @@ html,body{
 	max-width: none;
 	position: relative;
 }
-.content{
+.container{
 max-width: 500px;
 margin:0 auto;
 text-align: center;
 top:50%;
 left: 50%;
-position: absolute;
+/*position: absolute;*/
 transform:translate(-50%,20%); 
 }
 .btn{
@@ -124,6 +123,11 @@ i{
 	animation: slideInUp 3s;
 
 }
+.travel-banner{
+	animation: zoomInDown 2s;
+
+}
+
 
 #nav{
 	color: white;
@@ -259,3 +263,311 @@ div#slider figure {
   font-size: 0;
   animation: 30s slidy infinite; 
 }
+
+
+.section-1{
+	/*height: 200px;*/
+	width:100%;
+	background-image: url("../images/sunrise1.jpg");	
+	background-size:cover;
+	background-attachment: fixed;
+	opacity: .9;
+}
+.heading-contactus {
+	
+	color: #cccccc;
+	text-align: center;
+	margin-top: 20%;
+	font-family: Roboto;
+	text-shadow: 2px 1px #b3b3b3;
+}
+.section-1 .subheading-contactus{
+	
+	color: #cccccc;
+	text-align: center;
+	font-family: Roboto;
+	text-shadow: 2px 1px #b3b3b3;
+}
+
+.section2{
+	margin-top: 2rem;
+	width: 100%;
+	background-size: cover;
+	background-image: url("../images/landingbanner-blank.png");
+	opacity: .9;
+	/*background-image: linear-gradient(360deg,#fff , #808080);*/
+	/*background-color:#808080;*/
+	
+}
+.box-icon .fa-hiking{
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+}
+.box-icon .fa-user-friends{
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+}
+
+.section2 hr{
+	size:3em;
+
+}
+.section2 h2{
+	text-align: center;
+	font-family: Roboto;
+}
+.section3{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 7rem;
+	padding-right: 4rem;
+	margin-bottom: 2rem;
+}
+.card-title{
+	text-align: center;
+}
+
+.box-icon{
+	
+	margin: 0 auto;
+	border-radius: 100%;
+	/*margin: 1rem;*/
+	text-align: center;
+	height: 100px;
+	width: 100px;
+	background-color:#0066ff;
+	text-align: center;
+	position: relative;
+}
+.box-icon .fa-envelope-open{
+	text-align: center;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+}
+
+.fa-envelope-open{
+	color:white;
+	
+}
+.card{
+	background-color: transparent;
+	display: inline-block;
+	margin: 2% 1% 4% 1%;
+	border:0;
+}
+
+.contact-form{
+	margin: 1rem;
+	text-align:center;
+	/*border:2px solid white;*/
+	padding: 2%;
+	border-radius: 8px;
+	background-color: rgba(0, 0, 0,.7);
+}
+.container-form{
+	margin-top:4rem; 
+	background-image: url("../images/nature6.jpg");
+	background-size: cover;
+
+}
+.btn{
+	font-size: 1rem;
+}
+.txtb{
+	/*border:1px solid white;*/
+	/*border-radius: 8px;*/
+}
+.txtb label{
+	color:white;
+	display: block;
+	text-align: center;
+}
+.txtb input, .txtb textarea{
+	width: 100%;
+	border:none;
+	border-radius: 5px;
+	/*background:none;*/
+}
+
+#carousel-containerevents{
+	width: 100%;
+
+	
+}
+#img-ctrl-events{
+	width: 100%;
+	height: 500px;
+	background-size: cover;
+}
+.EventContainer h1{
+	text-align: center;
+	padding:1.5rem; 
+}
+.card-title{
+	display: inline;
+}
+
+
+/*start of modals*/
+.mystyle {
+    width: 100%;
+    padding: 25px;
+    background-color: coral;
+    color: white;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+
+.modal1 {
+  display: none;		  /*Hidden by default */
+  position: fixed; 		 /*Stay in place*/ 
+  z-index: 1; 				/* Sit on top*/ 
+  padding-top: 100px; 		/* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; 			/* Full width */
+  height: 100%; 		/* Full height */
+  overflow: auto; 			/* Enable scroll if needed */
+  background-color: rgb(0,0,0); 		/* Fallback color */
+  background-color: rgba(0,0,0,0.9); 		/* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close1 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-body{
+	text-align: justify;
+}
+table, th, td {
+  border: 1px solid black;
+  text-align:center;
+  font-size: .8rem;
+}
+.travelg{
+	height: 500px;
+	width:100%;
+	background-image: url("../images/travelgear.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 1rem;
+
+}
+.travel-banner{
+
+}
+
+.travelg-b-page{
+	width:100%;
+	background-image: url("../images/travelg2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+.navbar{
+	opacity: .8;
+}
+.container-t-tips{
+	background-color: rgba(0, 102, 0,.4);
+/*	margin-top: 8rem;*/
+}
+
+
+.container-tips{
+	background-color: rgba(0, 102, 0,.4);
+	
+}
+
+
+
+.col-lg-6 p{
+	text-align: center;
+	color: white;
+}
+.col-lg-6 h2{
+	text-align: center;
+	color: black;
+}
+
+.travel-ttips{
+	
+	background-color: rgba(0, 102, 0,.4);
+}
+.travel-banner {
+	
+	color: #cccccc;
+	text-align: center;
+	margin-top: 10%;
+	font-family: Roboto;
+	/*text-shadow: 2px 1px #b3b3b3;*/
+}
+
+
