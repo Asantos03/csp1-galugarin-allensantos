@@ -21,8 +21,8 @@
 	<title>Events</title>
 </head>
 <body>
-	<div class="container-fluid">
-		
+	
+		<main role="main">
 		<div class="navbar navbar-fixed-top" role="navigation">
 			<img class="img-fluid" id="img-ctrl-brand"src="assets/images/website-logo 2.png">
 			<ul class="nav justify-content-end">
@@ -61,47 +61,221 @@
 				</div>
 			</div>	
 		</div><!-- end of carousel -->
+		
 		<div class="EventContainer">
-			<h1>Plan your adventure with us</h1>
-			<div class="upevents-container">
-				<div class="upevents">
-					<h2>UPCOMING EVENTS</h2>
-				</div>
-				<!-- start of card -->
-				<div class="card" style="width: 18rem;">
-					<img class="card-img-top" src="assets/images/maculot.jpg" alt="Card image cap">
-					<div class="card-body">
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					</div>
-				</div><!-- end of card -->
-
-
-				<div class="card" style="width: 18rem;">
-					<img class="card-img-top" src="assets/images/maculot.jpg" alt="Card image cap">
-					<div class="card-body">
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					</div>
-				</div><!-- end of card -->
-				<div class="card" style="width: 18rem;">
-					<img class="card-img-top" src="assets/images/maculot.jpg" alt="Card image cap">
-					<div class="card-body">
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					</div>
-				</div><!-- end of card -->
-				<div class="card" style="width: 18rem;">
-					<img class="card-img-top" src="assets/images/maculot.jpg" alt="Card image cap">
-					<div class="card-body">
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					</div>
-				</div><!-- end of card -->
-			</div><!-- end of upcoming events container -->
-			<div class="upevents-container"><!-- Start of Past Events -->
-				<div class="upevents">
-					<h2>PAST EVENTS</h2>
+			<div class="row justify-content-center">
+				<div id="events-banner-container" class="col-lg-12 md-12 sm-12">
+					<h1 id="events-banner"class="display-3">Plan your adventure with us</h1>
 				</div>
 				
+				<div class="col-lg-12 md-12 sm-12">
+					<h2 id="upevents" class="display-5">UPCOMING EVENTS</h2>
+				</div>
 				<!-- start of card -->
-				<div class="card" style="width: 18rem;">
+				<div class="col-lg-3 md-6 sm-12">
+					<div class="card">
+
+						<img id="myImg" class="card-img-top" src="assets/images/batulao.jpg" alt="Batulao" >
+						<div id="myModal" class="modal1">
+							<span class="close1"> &times;</span>
+							<img class="modal-content" id="img01">
+							<div id="caption">Sample</div>
+						</div>
+						<div id="card-body-gal" class="card-body">
+							<h5 id="title-gal" class="card-title">Mt Batulao</h5>
+							<p id="p-gal">Date: 01-12-2019</p>	
+						</div>
+
+						<!-- Button trigger modal -->
+						<button type="button" id="btn-gallery"class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalLong">
+							View Details
+						</button>
+					</div>
+				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLongTitle">Date : 1-12-2019</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true"> &times; </span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<table style="width:100%">
+									<tr>
+										<th>Day/Hours Required</th>
+										<th>Features</th> 
+										<th>Estimated Budget</th>
+									</tr>
+									<tr>
+										<td>600-900Php</td>
+										<td>Open trails, rolling slopes, scenic views of Batangas</td> 
+										<td>600-900 Php</td>
+									</tr>
+								</table>
+							</div>
+							
+						</div>
+					</div>
+				</div> <!-- end of modal -->
+				<!-- start of card-2 -->
+				<div class="col-lg-3 md-6 sm-12">
+					<div class="card">
+						<img id="myImgpico" class="card-img-top" src="assets/images/Picodeloro.jpg" alt="Pico de Loro" >
+						<div id="myModalpico" class="modal1">
+							<span class="close2"> &times;</span>
+							<img class="modal-content" id="imgpico">
+							<div id="picocaption">Pico de Loro</div>
+						</div>
+						<div id="card-body-gal" class="card-body">
+							<h5 id="title-gal" class="card-title">Mt Pico de Loro</h5>
+							<p id="p-gal">Date: 02-12-2019</p>	
+						</div>
+						<!-- Button trigger modal -->
+						<button type="button" id="btn-gallery"class="btn btn-primary" data-toggle="modal" data-target="#picodeloroModalLong">
+							View Details
+						</button>
+					</div>
+				</div>
+				<!-- Modal pico-->
+				<div class="modal fade" id="picodeloroModalLong" tabindex="-1" role="dialog" aria-labelledby="picodeloroModalLongTitle" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="picodeloroModalLongTitle">Date : 2-12-2019</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true"> &times; </span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<table style="width:100%">
+									<tr>
+										<th>Day/Hours Required</th>
+										<th>Features</th> 
+										<th>Estimated Budget</th>
+									</tr>
+									<tr>
+										<td>1-2 days / 2-5 hours</td>
+										<td>Distinctive spire at the summit, forests, scenic views of Cavite</td> 
+										<td>740-1040Php</td>
+									</tr>
+								</table>
+							</div>
+							
+						</div>
+					</div>
+				</div> <!-- end of modal -->
+
+				<div class="col-lg-3 md-6 sm-12">
+					<div class="card">
+
+						<img id="myImgtagapo" class="card-img-top" src="assets/images/tagapo2.jpg" alt="Tagapo" >
+						<div id="myModaltagapo" class="modal1">
+							<span class="close3"> &times;</span>
+							<img class="modal-content" id="imgtagapo">
+							<div id="tagapocaption">Sample</div>
+						</div>
+						<div id="card-body-gal" class="card-body">
+							<h5 id="title-gal" class="card-title">Mt Tagapo</h5>
+							<p id="p-gal">Date: 02-27-2019</p>	
+						</div>
+
+						<!-- Button trigger modal -->
+						<button type="button" id="btn-gallery"class="btn btn-primary" data-toggle="modal" data-target="#tagapoModalLong">
+							View Details
+						</button>
+					</div>
+				</div>
+				<!-- Modal tagapo-->
+				<div class="modal fade" id="tagapoModalLong" tabindex="-1" role="dialog" aria-labelledby="tagapoModalLongTitle" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="tagapoModalLongTitle">Date : 02-27-2019</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true"> &times; </span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<table style="width:100%">
+									<tr>
+										<th>Day/Hours Required</th>
+										<th>Features</th> 
+										<th>Estimated Budget</th>
+									</tr>
+									<tr>
+										<td> 1 day / 2 hours</td>
+										<td>Entire Laguna Lake and its coastal towns;skylines of Makati and Ortigas</td> 
+										<td>500-700 (dayhike) 800-1000 (overnight)
+										</td>
+									</tr>
+								</table>
+							</div>
+							
+						</div>
+					</div>
+				</div> <!-- end of modal -->
+
+				<div class="col-lg-3 md-6 sm-12">
+					<div class="card">
+
+						<img id="myImgpulag" class="card-img-top" src="assets/images/Pulag.jpg" alt="Mt Pulag" >
+						<div id="myModalpulag" class="modal1">
+							<span class="close4"> &times;</span>
+							<img class="modal-content" id="imgpulag">
+							<div id="captionpulag">Sample</div>
+						</div>
+						<div id="card-body-gal" class="card-body">
+							<h5 id="title-gal" class="card-title">Mt Pulag (Ambangeg Trail)</h5>
+							<p id="p-gal">Date: 03-19-2019</p>	
+						</div>
+
+						<!-- Button trigger modal -->
+						<button type="button" id="btn-gallery"class="btn btn-secondary" data-toggle="modal" data-target="#pulagModalLong">
+							View Details
+						</button>
+					</div>
+				</div>
+				<!-- Modal pulag-->
+				<div class="modal fade" id="pulagModalLong" tabindex="-1" role="dialog" aria-labelledby="pulagModalLongTitle" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="pulagModalLongTitle">Date : 03-19-2019</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true"> &times; </span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<table style="width:100%">
+									<tr>
+										<th>Day/Hours Required</th>
+										<th>Features</th> 
+										<th>Estimated Budget</th>
+									</tr>
+									<tr>
+										<td> 4-5 hours / 1-2 days</td>
+										<td>Sea of clouds, dwarf bamboo slopes, pine forests</td> 
+										<td>DIY 2000-3000Php</td>
+									</tr>
+								</table>
+							</div>
+							
+						</div>
+					</div>
+				</div> <!-- end of modal -->
+				</main>
+		<!-- end of container -->
+
+			<!-- <div class="upevents-container"><  Start of Past Events -->
+				<!-- <div class="pevents">
+					<h2>PAST EVENTS</h2>
+				</div> -->
+				
+				<!-- start of card -->
+				<!-- <div class="card" style="width: 18rem;">
 					
 					<img id="myImg" class="card-img-top" src="assets/images/maculot.jpg" alt="Maculot Rockies" style="width:100%;max-width:300px">
 					<div id="myModal" class="modal1">
@@ -110,68 +284,18 @@
 						<div id="caption">Sample</div>
 					</div>
 					<div class="card-body">
-						<h5 class="card-title">Mt Maculot</h5>						
-					</div>
-				
-				<!-- Button trigger modal -->
-					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-  					View Details
-					</button>
+						<h5 class="card-title">Mt Maculot</h5>			</div> -->
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Date : 8-12-2018</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"> &times; </span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <table style="width:100%">
-  <tr>
-    <th>Day/Hours Required</th>
-    <th>Features</th> 
-    <th>Estimated Budget</th>
-  </tr>
-  <tr>
-    <td>1-2 hrs/Rockies / 2-4 hrs/Summit</td>
-    <td>Scenic views of Taal Lake, rock formations, forests</td> 
-    <td>600-900 Php</td>
-  </tr>
- </table>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+						<!-- Button trigger modal -->
+					<!-- 	<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalLong">
+							View Details
+						</button> -->
 
 
-			</div><!-- end of card container -->
 
 
-				<div class="card" style="width: 18rem;">
-					<img class="card-img-top" src="assets/images/maculot.jpg" alt="Card image cap">
-					<div class="card-body">
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					</div>
-				</div><!-- end of card -->
-				<div class="card" style="width: 18rem;">
-					<img class="card-img-top" src="assets/images/maculot.jpg" alt="Card image cap">
-					<div class="card-body">
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					</div>
-				</div><!-- end of card -->
-				<div class="card" style="width: 18rem;">
-					<img class="card-img-top" src="assets/images/maculot.jpg" alt="Card image cap">
-					<div class="card-body">
-						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					</div>
-				</div><!-- end of card -->
-			
+
+
 
 <script>//start of modal
 // Get the modal
@@ -194,6 +318,75 @@ var span = document.getElementsByClassName("close1")[0];
 span.onclick = function() { 
 	modal.style.display = "none";
 } //end of modal
+
+// Get the modal -modal 2
+var modal = document.getElementById('myModalpico');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImgpico');
+var modalImg = document.getElementById("imgpico");
+var captionText = document.getElementById("picocaption");
+img.onclick = function(){
+	modal.style.display = "block";
+	modalImg.src = this.src;
+	captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close2")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+	modal.style.display = "none";
+} //end of modal
+
+// Get the modal tagapo
+var modal = document.getElementById('myModaltagapo');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImgtagapo');
+var modalImg = document.getElementById("imgtagapo");
+var captionText = document.getElementById("tagapocaption");
+img.onclick = function(){
+	modal.style.display = "block";
+	modalImg.src = this.src;
+	captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close3")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+	modal.style.display = "none";
+} //end of modal
+
+// Get the modal pulag
+var modal = document.getElementById('myModalpulag');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImgpulag');
+var modalImg = document.getElementById("imgpulag");
+var captionText = document.getElementById("captionpulag");
+img.onclick = function(){
+	modal.style.display = "block";
+	modalImg.src = this.src;
+	captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close4")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+	modal.style.display = "none";
+} //end of modal
 </script> 
 
 </div>
+</div>
+</div>
+
+
+</body>
+</html>	

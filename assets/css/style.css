@@ -1,18 +1,14 @@
-html,body{
+*{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+html,body{
+	
 	height: 100%;
 	width: 100%;
 }
-/*intro*/
-/*.banner{
-	background-image: url("../images/landingbanner-blank.png");
-	width: 100%;
-	height: 200px;
-	background-size: cover; 
-	background-color: rgba(255, 255, 255,.4);
-	opacity: .8;
-}*/
+
 #h2-banner{
 	text-align: center;
 	/*vertical-align: text-bottom;*/
@@ -21,18 +17,29 @@ html,body{
   	top: 50%;
   	left: 40%;
 }
+#events-banner-container{
+	background-color: #80d4ff;
+	width: 100%;
+}
 
 .landing{
 	height: 100%;
 	width: 100%;
-	background-image: url("../images/nature6.jpg");
-	background-size: cover;
-	/*background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0));*/
 	display: table;
 	top:0;
 	margin:auto;
 	/*position: relative;*/
 }
+.content{
+max-width: 500px;
+margin:0 auto;
+text-align: center;
+top:50%;
+left: 50%;
+position: absolute;
+transform:translate(-50%,20%); 
+}
+
 .clip-path{
 	padding-left: 30px;
 	margin:0 auto;
@@ -95,7 +102,7 @@ left: 50%;
 transform:translate(-50%,20%); 
 }
 .btn{
-	color:#262626;
+	background-color:rgba(40, 82, 20,.6);
 	font-family: sans-serif;
 	font-size: 135%;
 	font-weight: 400;
@@ -107,8 +114,25 @@ transform:translate(-50%,20%);
 
 }
 .btn:hover{
-	color:#CBDFD6;
+	color:white;
 	border: solid #CBDFD6; 
+}
+
+#btn-gallery{
+ 	background-color:#669900;
+ 	/*background-image: linear-gradient(to right, rgba(153, 153, 102,.5), rgba(61, 61, 41,.5));*/
+	padding: 2px 2px;
+	font-size: .8rem;
+	
+	text-align: center;
+	/*border:2px solid #0059b3;*/
+}
+
+#card-body-gal{
+	text-align: left;	
+}
+#p-gal{
+	margin-bottom: 0;
 }
 
 #img-ctrl{
@@ -118,37 +142,47 @@ transform:translate(-50%,20%);
 	margin: 0px 0px 5px 35px;
 
 }
+
 i{
 	font-size: 45px;
 	color:black;
 }
 .os-animation{
-	animation: slideInUp 3s;
+	animation: flip 3s;
 
 }
-.travel-banner{
-	animation: zoomInDown 2s;
+/*.travel-banner{
+	animation: zoomInDown 2s infinite;
 
+}*/
+.row p{
+	text-align: center;	
 }
-
 
 #nav{
 	color: white;
 }
-a{
-	color: white;
+.os-animation a{
+	color: #CBDFD6;
 }
 #img-ctrl-carousel{
 	/*float:left;*/
-	height: 400px;
+	height: 500px;
 	/*width: 100px;*/
 }
 
 #carousel-container{
-	/*height: 500px;*/
+	/*height: 600px;*/
 	width: 100%;
 	border:2px solid white;
 	padding-bottom: 50px;
+}
+#home-card-title{
+	font-family: PlayDispair,sans-serif;
+}
+#home-latest{
+	font-family: PlayDispair,sans-serif;
+	text-align:center;
 }
 
 #img-ctrl-brand{
@@ -175,30 +209,9 @@ a{
 	clear:both;
 	display: block;
 }
-.container-latest-attraction{
-	height: 100%;
-	width: 100%;
-	float: left;
-	justify-content: center;
-	padding-left: 60px;
-	
-}
-.container-n-attraction{
-	width: 30%;
-	min-height: 300px;
-	/*box-sizing: border-box;*/
-	float: left;
-	margin-left: 25px;
-	text-align: justify;
-	margin: 0px 10px 0px 10px;
-}
 
-.img-attraction{
-	margin:0 auto;
 
-	height: 100%;
-	width: 100%;
-}
+
 footer{
 	width: 100%;
 	height: 100px;
@@ -268,8 +281,9 @@ div#slider figure {
 }
 
 
+
 .section-1{
-	/*height: 200px;*/
+	height: 500px;
 	width:100%;
 	background-image: url("../images/sunrise1.jpg");	
 	background-size:cover;
@@ -278,26 +292,29 @@ div#slider figure {
 }
 .heading-contactus {
 	
-	color: #cccccc;
+	/*background:linear-gradient(to bottom,rgba(255,255,255,.1),rgba(0,0,0,.1));*/
+	color:linear-gradient(to bottom,rgba(255,255,255,0),rgba(0,0,0,.1));
 	text-align: center;
 	margin-top: 20%;
-	font-family: Roboto;
-	text-shadow: 2px 1px #b3b3b3;
+	margin-bottom: 0;
+	font-family: Playfair,sans-serif;
+	text-shadow: 2px 1px #c2c2a3
+;
 }
 .section-1 .subheading-contactus{
 	
-	color: #cccccc;
+	margin-top: 0;
 	text-align: center;
-	font-family: Roboto;
-	text-shadow: 2px 1px #b3b3b3;
+	font-family: Playfair,sans-serif;
+	text-shadow: 2px 1px #c2c2a3;
 }
 
 .section2{
-	margin-top: 2rem;
+	margin-top: 5rem;
 	width: 100%;
 	background-size: cover;
 	background-image: url("../images/landingbanner-blank.png");
-	opacity: .9;
+	/*opacity: .9;*/
 	/*background-image: linear-gradient(360deg,#fff , #808080);*/
 	/*background-color:#808080;*/
 	
@@ -321,14 +338,12 @@ div#slider figure {
 	position: absolute;
 }
 
-.section2 hr{
-	size:3em;
 
-}
-.section2 h2{
+#hjoin{
 	text-align: center;
-	font-family: Roboto;
+	font-family:Playfair,sans-serif;
 }
+
 .section3{
 	width: 100%;
 	margin-left: auto;
@@ -337,8 +352,23 @@ div#slider figure {
 	padding-right: 4rem;
 	margin-bottom: 2rem;
 }
-.card-title{
+
+
+#card-text-contact{
+	font-size: 1.2rem;
+	/*color:#00334d;*/
+	font-family:Roboto;
+}
+#card-title2{
+	font-size: 1.6rem;
+	font-weight: bold;
 	text-align: center;
+	font-family: Playfair,sans-serif;
+
+}
+.card-body{
+	padding: 1rem .25rem .25rem .25rem;
+	text-align:center;
 }
 
 .box-icon{
@@ -368,7 +398,7 @@ div#slider figure {
 }
 .card{
 	background-color: transparent;
-	display: inline-block;
+
 	margin: 2% 1% 4% 1%;
 	border:0;
 }
@@ -383,7 +413,7 @@ div#slider figure {
 }
 .container-form{
 	margin-top:4rem; 
-	background-image:linear-gradient(red,blue);
+	background-image:url("../images/trees.jpg");
 	background-size: cover;
 
 }
@@ -399,12 +429,18 @@ div#slider figure {
 	width: 100px;
 	background-color: white;
 }
-#map{
-	margin-top:.4rem;
+.imap{
+	margin:1rem;
+}
+.imap iframe{
+	width: 100%;
+	margin: 0 auto;
+	height: 350px;
 }
 
 .btn{
 	font-size: 1rem;
+	background-color: ;
 }
 .txtb{
 	/*border:1px solid white;*/
@@ -436,6 +472,10 @@ div#slider figure {
 	text-align: center;
 	padding:1.5rem; 
 }
+.EventContainer{
+	background-image: url();
+
+}
 .card-title{
 	display: inline;
 }
@@ -456,9 +496,26 @@ div#slider figure {
   cursor: pointer;
   transition: 0.3s;
 }
+#myImgpico {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#myImgtagapo {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#myImgpulag {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
+#myImgpico:hover {opacity: 0.7;}
 #myImg:hover {opacity: 0.7;}
-
+#myImgtagapo:hover {opacity: 0.7;}
+#myImgpulag:hover {opacity: 0.7;}
 /* The Modal (background) */
 
 .modal1 {
@@ -494,9 +551,51 @@ div#slider figure {
   padding: 10px 0;
   height: 150px;
 }
+#picocaption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+#tagapocaption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+#captionpulag {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
 
 /* Add Animation - Zoom in the Modal */
 .modal-content, #caption { 
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+.modal-content, #picocaption { 
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+.modal-content, #tagapocaption { 
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+.modal-content, #captionpulag { 
   animation-name: zoom;
   animation-duration: 0.6s;
 }
@@ -516,9 +615,53 @@ div#slider figure {
   font-weight: bold;
   transition: 0.3s;
 }
-
+.close2 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close3 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close4 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
 .close1:hover,
 .close1:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close2:hover,
+.close2:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close3:hover,
+.close3:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close4:hover,
+.close4:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
@@ -566,14 +709,6 @@ table, th, td {
 
 
 
-.col-lg-6 p{
-	text-align: center;
-	color: white;
-}
-.col-lg-6 h2{
-	text-align: center;
-	color: black;
-}
 
 .travel-ttips{
 	
@@ -588,4 +723,18 @@ table, th, td {
 	/*text-shadow: 2px 1px #b3b3b3;*/
 }
 
+#sendbtn{
+	color:white;
+}
+
+#events-banner{
+	font-family: PlayDispair,sans-serif;
+
+}
+
+#upevents{
+	margin-top: 3rem;
+	margin-bottom: 1rem;
+	font-family: PlayDispair,sans-serif;
+}
 
