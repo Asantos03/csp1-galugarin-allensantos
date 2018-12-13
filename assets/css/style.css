@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 html,body{
-	
+	overflow-x: hidden;
 	height: 100%;
 	width: 100%;
 }
@@ -80,9 +80,19 @@ transform:translate(-50%,20%);
 	
 	.navbar{
 		background-color:#00334d;
-		opacity: .9;
-	}
-	
+		opacity: 1;
+		padding:.2rem;
+			}
+	.nav-link{
+			font-family: Berlin Sans FB Demi,sans-serif;
+			font-size: 1.2rem;
+
+		}
+.active{
+	background-color:#66ff33;
+	border-radius: 5px;
+
+}
 	
 /*inner*/
 .intro-landing{
@@ -115,8 +125,20 @@ transform:translate(-50%,20%);
 }
 .btn:hover{
 	color:white;
-	border: solid #CBDFD6; 
+	border: solid #CBDFD6;
 }
+
+#btn-pag{
+	font-size: 70%;
+	background-color:transparent;
+	border: 1px solid #999999;
+	padding: 5px 10px;
+}
+#btn-pag:hover{
+	color:black;
+	border: solid #CBDFD6;
+}
+
 
 #btn-gallery{
  	background-color:#669900;
@@ -169,6 +191,7 @@ i{
 	/*float:left;*/
 	height: 500px;
 	/*width: 100px;*/
+	margin: 0 auto;
 }
 
 #carousel-container{
@@ -216,35 +239,33 @@ footer{
 	width: 100%;
 	height: 100px;
 	background-color: #00334d;
-	float: left;
+	align-items: center;
+	display: flex;
+}
 
-}
-.container-left
-{
-	width: 60%;
-	
-	height: 100px;
-	float: left;
-}
 
 #footer-name{
-	padding-top:40px;
+	margin: 0 auto;
 	text-align: center;
+	font-family: PlayDisfair,sans-serif;
+	color:white;
+	justify-content: space-between;
+}
+ul{
+	list-style-type: none;
+	display: flex;
+
+}
+footer li{
+	margin: 2rem;
+	display: list-item;
+}
+footer i{
+	font-size:1rem;
+	color: white;
 }
 
-.container-right
-{
-	width: 40%;
-	height: 100px;
-	float: left;
-}
-#footer-icon{
-	padding-top:30px;
-	text-align: center;
-	display: inline-block;
-	padding-left: 20px;
-	font-size: 40px: 
-}
+
 /*@keyframes slidy {
 0% { left: 0%; }
 20% { left: 0%; }
@@ -431,11 +452,13 @@ div#slider figure {
 }
 .imap{
 	margin:1rem;
+
 }
 .imap iframe{
 	width: 100%;
 	margin: 0 auto;
-	height: 350px;
+	height: 330px;
+	
 }
 
 .btn{
@@ -465,7 +488,7 @@ div#slider figure {
 }
 #img-ctrl-events{
 	width: 100%;
-	height: 500px;
+	/*height: 500px;*/
 	background-size: cover;
 }
 .EventContainer h1{
@@ -684,7 +707,11 @@ table, th, td {
 	padding-bottom: 1rem;
 
 }
-.travel-banner{
+#travel-banner{
+	font-family: Playfair,sans-serif;
+	color:white;
+	margin: 0 auto;
+	
 
 }
 
@@ -696,18 +723,19 @@ table, th, td {
 	
 }
 	
-.container-t-tips{
-	background-color: rgba(0, 102, 0,.4);
-/*	margin-top: 8rem;*/
-}
-
+.personal-h{
+	margin: 0;
+	padding: 0;
+	}
 
 .container-tips{
 	background-color: rgba(0, 102, 0,.4);
 	
 }
 
-
+.travel-content-container{
+	padding: 2rem;
+}
 
 
 .travel-ttips{
@@ -733,8 +761,12 @@ table, th, td {
 }
 
 #upevents{
-	margin-top: 3rem;
-	margin-bottom: 1rem;
+	margin: 3rem 0 1rem 1rem;
 	font-family: PlayDispair,sans-serif;
+}
+#p-pevents{
+	margin: 3rem 0 1rem 1rem;
+	font-family: PlayDispair,sans-serif;
+
 }
 

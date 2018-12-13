@@ -22,27 +22,32 @@
 </head>
 <body>
 	
-		<main role="main">
-		<div class="navbar navbar-fixed-top" role="navigation">
-			<img class="img-fluid" id="img-ctrl-brand"src="assets/images/website-logo 2.png">
-			<ul class="nav justify-content-end">
-				<li class="nav-item">
-
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" href="home.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="ContactUs.html">Contact Us</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="Events.html">Events</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="travelguide.html">Travel Guide</a>
-				</li>
-			</ul>	
-		</div><!-- end of nav -->
+	<header>
+	<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="index.html">
+  	<img src="assets/images/website-logo 2.png" width="180" height="80" class="d-inline-block align-top" alt="galugarin">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ContactUs.html">Contact Us</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="Events.html">Events<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="travelguide.html">Travel Guide</a>
+      </li>
+    </ul>
+  </div>
+</nav><!-- end of nav -->
+</header>
 
 		<!-- start of events -->
 		<!-- Start of carousel -->	
@@ -50,10 +55,10 @@
 			<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img id="img-ctrl-events" class="d-block w-100" src="assets/images/bg-events5.jpg" alt="First slide">
+						<img id="img-ctrl-events" class="d-block w-100" src="assets/images/bg-events1.jpg" alt="First slide">
 					</div>
 					<div class="carousel-item">
-						<img id="img-ctrl-events" class="d-block w-100" src="assets/images/bg-events1.jpg" alt="Second slide">
+						<img id="img-ctrl-events" class="d-block w-100" src="assets/images/bg-events5.jpg" alt="Second slide">
 					</div>
 					<div class="carousel-item">
 						<img id="img-ctrl-events" class="d-block w-100" src="assets/images/bg-event4.jpg" alt="Third slide">
@@ -83,14 +88,14 @@
 						</div>
 						<div id="card-body-gal" class="card-body">
 							<h5 id="title-gal" class="card-title">Mt Batulao</h5>
-							<p id="p-gal">Date: 01-12-2019</p>	
+							<p class="card-text"><small class="text-muted">Date : 01-12-2019</small></p>	
 						</div>
 
 						<!-- Button trigger modal -->
 						<button type="button" id="btn-gallery"class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalLong">
 							View Details
 						</button>
-					</div>
+					</div><!-- Maculot -->
 				</div>
 				<!-- Modal -->
 				<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -131,13 +136,13 @@
 						</div>
 						<div id="card-body-gal" class="card-body">
 							<h5 id="title-gal" class="card-title">Mt Pico de Loro</h5>
-							<p id="p-gal">Date: 02-12-2019</p>	
+							<p class="card-text"><small class="text-muted">Date : 02-12-2019</small></p>
 						</div>
 						<!-- Button trigger modal -->
 						<button type="button" id="btn-gallery"class="btn btn-primary" data-toggle="modal" data-target="#picodeloroModalLong">
 							View Details
 						</button>
-					</div>
+					</div><!-- Pico de loro -->
 				</div>
 				<!-- Modal pico-->
 				<div class="modal fade" id="picodeloroModalLong" tabindex="-1" role="dialog" aria-labelledby="picodeloroModalLongTitle" aria-hidden="true">
@@ -179,15 +184,15 @@
 						</div>
 						<div id="card-body-gal" class="card-body">
 							<h5 id="title-gal" class="card-title">Mt Tagapo</h5>
-							<p id="p-gal">Date: 02-27-2019</p>	
+							<p class="card-text"><small class="text-muted">Date : 02-27-2019</small></p>	
 						</div>
 
 						<!-- Button trigger modal -->
 						<button type="button" id="btn-gallery"class="btn btn-primary" data-toggle="modal" data-target="#tagapoModalLong">
 							View Details
 						</button>
-					</div>
-				</div>
+					</div><!-- Tagapo
+ -->				</div>
 				<!-- Modal tagapo-->
 				<div class="modal fade" id="tagapoModalLong" tabindex="-1" role="dialog" aria-labelledby="tagapoModalLongTitle" aria-hidden="true">
 					<div class="modal-dialog" role="document">
@@ -229,14 +234,14 @@
 						</div>
 						<div id="card-body-gal" class="card-body">
 							<h5 id="title-gal" class="card-title">Mt Pulag (Ambangeg Trail)</h5>
-							<p id="p-gal">Date: 03-19-2019</p>	
+							<p class="card-text"><small class="text-muted">DATE : 3-19-2019</small></p>	
 						</div>
 
 						<!-- Button trigger modal -->
 						<button type="button" id="btn-gallery"class="btn btn-secondary" data-toggle="modal" data-target="#pulagModalLong">
 							View Details
 						</button>
-					</div>
+					</div><!-- Pulag -->
 				</div>
 				<!-- Modal pulag-->
 				<div class="modal fade" id="pulagModalLong" tabindex="-1" role="dialog" aria-labelledby="pulagModalLongTitle" aria-hidden="true">
@@ -266,30 +271,92 @@
 						</div>
 					</div>
 				</div> <!-- end of modal -->
-				</main>
-		<!-- end of container -->
-
-			<!-- <div class="upevents-container"><  Start of Past Events -->
-				<!-- <div class="pevents">
-					<h2>PAST EVENTS</h2>
-				</div> -->
 				
-				<!-- start of card -->
-				<!-- <div class="card" style="width: 18rem;">
-					
-					<img id="myImg" class="card-img-top" src="assets/images/maculot.jpg" alt="Maculot Rockies" style="width:100%;max-width:300px">
-					<div id="myModal" class="modal1">
-						<span class="close1"> &times;</span>
-						<img class="modal-content" id="img01">
-						<div id="caption">Sample</div>
-					</div>
-					<div class="card-body">
-						<h5 class="card-title">Mt Maculot</h5>			</div> -->
+				<!-- <div class="p-events-container"> --> <!-- Start of Past Events -->
+					<div class="col-lg-12 md-12 sm-12">
+					<h2 id="p-pevents" class="display-5">PAST EVENTS</h2>
+				</div>
+  </div><!-- end of row -->
+  <div class="card-columns">
+  <div class="card">
+    <img class="card-img-top" src="assets/images/maculot.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Mt Maculot</h5>
+      <p class="card-text">Mt. Maculot is one of the most popular daytrip destinations. It is so popular that on weekends and summer months, there is a sari-sari store, dubbed ‘7-11’ at the campsite. This mountain, at the heart of Batangas, is known as a landmark for locals and travelers alike; it is easily identifiable because of its abruptly terminating east side – forming a cliff that is challenging for rock climbers and breathtaking to everybody else...<button type="button" id="btn-pag" class="btn btn-outline-secondary">Read more</button></p>
+    <p class="card-text"><small class="text-muted">Last updated 8 mins ago</small></p>
+    </div>
+  </div>
+  
+  <div class="card p-3">
+     <img class="card-img-top" src="assets/images/talamitam2.jpg" alt="Mt Talamitam">
+   <div class="card-body">
+     <h5 class="card-title">Mt Talamitam</h5>
+      <p>After a very nice climb of Mt. Talamitam (see Hiking matters #193) we proceeded to Mt. Batulao, and started trekking...<button type="button" id="btn-pag" class="btn btn-outline-secondary">Read more</button></p>
+    <p class="card-text"><small class="text-muted">Last updated 11 mins ago</small></p>
+</div>
+  </div>
 
-						<!-- Button trigger modal -->
-					<!-- 	<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalLong">
-							View Details
-						</button> -->
+
+  <div class="card">
+    <img class="card-img-top" src="assets/images/ulap2.jpg" alt="Mt Ulap">
+    <div class="card-body">
+      <h5 class="card-title">Mt Ulap</h5>
+      <p class="card-text">A “mini-Mt. Ugo” which showcases the best of what the Cordilleras has to offer: Pine and grassland ridges with stunning views of the mountains, and even a glimpse of culture with villages, burial caves, and hanging bridges, the Mt. Ulap Eco-Trail in Itogon, Benguet is the perfect....<button type="button" id="btn-pag" class="btn btn-outline-secondary">Read more</button></p>
+      <p class="card-text"><small class="text-muted">Last updated 55 mins ago</small></p>
+    </div>
+  </div>
+  
+  <div class="card">
+    <img class="card-img-top" src="assets/images/pinatubo2.jpg" alt="Mt Pinatubo">
+    <div class="card-body">
+      <h5 class="card-title">Mt Pinatubo</h5>
+      <p class="card-text">As you behold the crater of Mt. Pinatubo, after a two-hour walk, you will be filled with awe. It will be – and this is not an exaggeration – sensory overload, for who would imagine seeing glacier-like barren brown peaks with white smoke effusing up, in the background of a crater lake that was in itself enchanting? It was truly an awesome sight to behold....<button type="button" id="btn-pag" class="btn btn-outline-secondary">Read more</button></p>
+      <p class="card-text"><small class="text-muted">Last updated 15 mins ago</small></p>
+    </div>
+  </div>
+
+  
+  <div class="card">
+    <img class="card-img" src="assets/images/manalmon.jpg" alt="Card image">
+  </div>
+  <div class="card">
+  	<div class="card-body">
+  	<h5 class="card-title">Mt Manalmon</h5>
+    
+      <p>Part of the historical Biak-na-Bato National Park is an outdoor destination called Mt. Manalmon, in San Miguel, Bulacan. Although merely a hill, strictly speaking, Mt. Manalmon possesses novel landscapes, including those of Madlum River, whose rock formations compensate for an otherwise unremarkable environ. Also, nearby sites such as the Bayukbok Caves (a 2-hr exploration from the River) and Madlum cave (historical due to an 18th century relic) can be..<button type="button" id="btn-pag" class="btn btn-outline-secondary">Read more</button></p>
+    <p class="card-text"><small class="text-muted">Last updated 33 mins ago</small></p>
+   
+  </div>
+</div>
+  <div class="card">
+  	<img class="card-img-top" src="assets/images/nature7.jpg" alt="Mt Ulap">
+    <div class="card-body">
+      <h5 class="card-title">Hulugan Falls</h5>
+      <p class="card-text">The journey through the roads going to Luisiana made us discover other beautiful t...<button type="button" id="btn-pag" class="btn btn-outline-secondary">Read more</button></p>
+      <p class="card-text"><small class="text-muted">Last updated 40 mins ago</small></p>
+    </div>
+  </div>
+</div>
+
+
+</div><!-- end of container -->
+
+
+			
+	<footer>
+			
+		<p id="footer-name">Student Copyright &copy; Allen Santos
+		</p>
+		
+		<ul>
+		<li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+		<li><a href="https://mail.google.com"><i class="fas fa-envelope-square"></i></a></li>
+		<li><a href="https://github.com"><i class="fab fa-github"></i></a></li>
+		</ul>
+	
+		</footer>
+
+			 
 
 
 
@@ -383,9 +450,7 @@ span.onclick = function() {
 } //end of modal
 </script> 
 
-</div>
-</div>
-</div>
+
 
 
 </body>

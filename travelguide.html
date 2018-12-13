@@ -13,7 +13,7 @@
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
-	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
@@ -22,43 +22,46 @@
 </head>
 <body>
 	
-		<section class="travelg">
-			<div class="navbar navbar-fixed-top" role="navigation">
-				<img class="img-fluid" id="img-ctrl-brand"src="assets/images/website-logo 2.png">
-				<ul class="nav justify-content-end">
-					<li class="nav-item">
-
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" href="home.html">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="ContactUs.html">Contact Us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="Events.html">Events</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="travelguide.html">Travel Guide</a>
-					</li>
-				</ul>	
-			</div><!-- end of nav -->
-			<div class="travel-banner">
-				<div class="d-flex justify-content-center"> 
-					<div class="d-flex flex-column"> 	
-						<h2 class="travel-banner display-1">Travel Guide</h2>
-
-					</div>
-				</div>
+		<header class="travelg">
+			
+	<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="index.html">
+  	<img src="assets/images/website-logo 2.png" width="180" height="80" class="d-inline-block align-top" alt="galugarin">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ContactUs.html">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Events.html">Events</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="travelguide.html">Travel Guide<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav><!-- end of nav -->
+		<div id="travel-banner" class="row content-align-center">
+				<div class="col-4 lg-4 md-12 sm-12"></div>
+				<h1 class="display-2">Travel Guide</h1>
 			</div>
-		</section>
+</header>
+	
 		<section class="travelg-b-page">
-			<div class="container-t-tips">
+
+			<div class="container-tips">
 				<div class="row">
-					<div class="col-lg-6">
+					<div class="col-lg-6 personal-h">
 						<img class="img-fluid"src="assets/images/fitness.jpg">
 					</div>
-					<div class="col-lg-6 align-self-center">
+					<div class="col-lg-6 align-self-center travel-content-container">
 						<h2>Personal Health</h2>
 						<p>As with any sport, before engaging in mountain climbing proper training and physical preparation is needed. For beginners, an easy and inexpensive way to get in shape is to go jogging 3 to 4 times a week before your scheduled outdoor climb. Another way to prepare your leg muscles is to do stair climbing, and as you stair climb you can wear a backpack and loaded with heavy books or liters of plastic water bottles to also target your shoulder, back, leg muscles and knees. This way you can get accustomed to carrying a heavy backpack as well. </p>
 						<p>The harder the climb, the more physical preparation is needed. This is important to minimize hiking related injuries and if you are physically prepared, you would fully enjoy the breath taking views and not the other way around...which is you running out of or gasping for breath.</p>
@@ -69,7 +72,7 @@
 
 			<div class="container-tips">
 				<div class="row">
-					<div class="col-lg-6 align-self-center">
+					<div class="col-lg-6 align-self-center travel-content-container">
 
 						<h2>Tools and Necessities</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -79,17 +82,17 @@
 							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-6 personal-h">
 						<img class="img-fluid"src="assets/images/tools.jpg">
 					</div>
 				</div>
 			</div>
 			<div class="container-tips">
 				<div class="row">
-					<div class="col-lg-6">
+					<div class="col-lg-6 personal-h">
 						<img class="img-fluid"src="assets/images/pinatubo.jpg">
 					</div>
-					<div class="col-lg-6 align-self-center">
+					<div class="col-lg-6 align-self-center travel-content-container">
 
 						<h2>Mountain Etiquette</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -107,15 +110,16 @@
 
 		</section>
 		<footer>
-			<div class="container-left">
-				<p id="footer-name">Student Copyright &copy; Allen Santos</p>
-			</div>	
-			<div class="container-right">
-				<a id="footer-icon"><i class="fab fa-github-square"></i></a>
-				<a id="footer-icon"><i class="fab fa-google"></i></a>
-
-			</div>
-
+			
+		<p id="footer-name">Student Copyright &copy; Allen Santos
+		</p>
+		
+		<ul>
+		<li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+		<li><a href="https://mail.google.com"><i class="fas fa-envelope-square"></i></a></li>
+		<li><a href="https://github.com"><i class="fab fa-github"></i></a></li>
+		</ul>
+	
 		</footer>
 
 
